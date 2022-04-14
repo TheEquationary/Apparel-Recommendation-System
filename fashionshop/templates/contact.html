@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Page Add Section Begin -->
+<section class="page-add" style="margin-top: 10%;">
+    <div class="container" style="text-align: center;">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-breadcrumb">
+                    <h2>Contact us<span>.</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page Add Section End -->
+
+<!-- Contact Section Begin -->
+<div class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <form action="{{ url_for('contact') }}" class="contact-form" method = "POST">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="First Name" name="firstname">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Last Name" name="lastname">
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="email" placeholder="E-mail" name="email">
+                            <input type="text" placeholder="Subject" name="subject">
+                            <textarea placeholder="Message" name="message"></textarea>
+                        </div>
+                        <div class="col-lg-12 text-right">
+                            <button type="submit" style="background-color: #fd045c; border: transparent;">Send message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 offset-lg-1">
+                <div class="contact-widget">
+                    <div class="cw-item">
+                        <h5>Location</h5>
+                        <ul>
+                            <li>KJSCE </li>
+                            <li>Mumbai</li>
+                        </ul>
+                    </div>
+                    <div class="cw-item">
+                        <h5>Phone</h5>
+                        <ul>
+                            <li>+91 9969283068</li>
+                            <!-- <li>+1 (603)535-4556</li> -->
+                        </ul>
+                    </div>
+                    <div class="cw-item">
+                        <h5>E-mail</h5>
+                        <ul>
+                            <li>covero.care@gmail.com</li>
+                            <!-- <li>www.violetstore.com</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- <iframe
+                        src="https://www.google.com/maps/place/Th%E1%BA%A3o+%C4%90i%E1%BB%81n,+Qu%E1%BA%ADn+2,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.809279,106.7266634,15z/data=!3m1!4b1!4m5!3m4!1s0x3175263d580e4583:0x6d25e042c3aed063!8m2!3d10.8064331!4d106.7323097?hl=vi-VN"
+                        height="560" style="border:0;" allowfullscreen=""></iframe> -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15083.023314040223!2d72.88699274999999!3d19.074470200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c627a20bcaa9%3A0xb2fd3bcfeac0052a!2sK.%20J.%20Somaiya%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1649877077587!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Section End -->
+{% endblock content %}
